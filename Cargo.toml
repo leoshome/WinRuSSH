@@ -1,0 +1,32 @@
+[package]
+name = "winrussh"
+version = "0.1.0"
+edition = "2021"
+authors = ["Leo"]
+license = "MIT"
+description = "WinRuSSH - Native Windows SSH Terminal with Multi-Task Tabs and Lua Automation (Rust + windows-rs)"
+
+[dependencies]
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Controls",
+    "Win32_UI_Controls_Dialogs",
+    "Win32_System_LibraryLoader",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_HiDpi",
+    "Win32_System_DataExchange",
+    "Win32_System_Memory",
+] }
+ssh2 = "0.9"
+mlua = { version = "0.10", features = ["lua54", "vendored"] }
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "unwind"
+strip = true

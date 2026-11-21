@@ -1,0 +1,11 @@
+/target
+.superpowers/
+
+# Runtime config, host keys, and logs
+winrussh.ini
+known_hosts
+*.log
+
+# Windows debug symbols and standalone binaries
+*.pdb
+*.exe
