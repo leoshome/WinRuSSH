@@ -4,6 +4,8 @@
 
 An ultra-lightweight, high-performance native Windows SSH terminal emulator and automation console written in **Rust** using Microsoft's official **`windows-rs`** (`windows` 0.62), **`ssh2`** (libssh2), and embedded **Lua 5.4 (`mlua`)**.
 
+![WinRuSSH Snapshot](assets/snapshot.png)
+
 ---
 
 ## Key Highlights

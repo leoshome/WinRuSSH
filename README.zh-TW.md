@@ -4,6 +4,8 @@
 
 這是一款極致輕量的原生 Windows SSH 終端機與自動化控制台，使用 **Rust** 語言搭配微軟官方 **`windows-rs`**（`windows` 0.62）、**`ssh2`** (libssh2) 以及內嵌 **Lua 5.4 (`mlua`)** 打造。
 
+![WinRuSSH Snapshot](assets/snapshot.png)
+
 ---
 
 ## 核心特色
